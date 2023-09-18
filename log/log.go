@@ -102,6 +102,10 @@ func Print(v ...any) {
 	Log().Msg(fmt.Sprint(v...))
 }
 
+func Println(v ...any) {
+	Log().Msg(fmt.Sprintln(v...))
+}
+
 func Printf(format string, v ...interface{}) {
 	Print(fmt.Sprintf(format, v...))
 }
