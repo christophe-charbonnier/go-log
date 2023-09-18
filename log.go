@@ -103,7 +103,7 @@ func Print(v ...any) {
 }
 
 func Println(v ...any) {
-	Log().Msg(fmt.Sprintln(v...))
+	Print(v...)
 }
 
 func Printf(format string, v ...interface{}) {
