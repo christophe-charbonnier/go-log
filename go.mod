@@ -1,4 +1,4 @@
-module christophe-charbonnier/log
+module github.com/christophe-charbonnier/log
 
 go 1.21.0
 
