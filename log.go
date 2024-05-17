@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/k0kubun/pp/v3"
 	"github.com/pterm/pterm"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/pkgerrors"
@@ -120,4 +121,8 @@ func GetLevel() zerolog.Level {
 
 func SetLevel(lvl zerolog.Level) {
 	zerolog.SetGlobalLevel(lvl)
+}
+
+func Pretty(a ...any) string {
+	return pp.Sprint(a)
 }
